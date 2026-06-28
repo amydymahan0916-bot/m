@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>کارت و بمب</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+🃏 کارت و بمب
+</h1>
+
+<div class="wallet">
+💰 100T
+</div>
+
+</header>
+
+
+
+<section class="login">
+
+<h2>
+شروع بازی
+</h2>
+
+
+<p>
+مبلغ ورود
+</p>
+
+
+<input placeholder="مثلا 10T">
+
+
+<button onclick="startGame()">
+🚀 شروع
+</button>
+
+
+</section>
+
+
+
+
+<section class="game-area">
+
+
+<h2>
+ضریب:
+<span id="multi">
+1.00x
+</span>
+</h2>
+
+
+<h3>
+سود فعلی:
+<span id="profit">
+0T
+</span>
+</h3>
+
+
+
+
+<div class="cards">
+
+
+<button onclick="chooseCard(this)">
+❓
+</button>
+
+
+<button onclick="chooseCard(this)">
+❓
+</button>
+
+
+<button onclick="chooseCard(this)">
+💣
+</button>
+
+
+<button onclick="chooseCard(this)">
+❓
+</button>
+
+
+</div>
+
+
+
+<button class="withdraw" onclick="withdraw()">
+
+💰 برداشت
+
+</button>
+
+
+</section>
+
+
+
+
+
+<script>
+
+
+let multiplier=1;
+
+
+function startGame(){
+
+alert("بازی شروع شد 🎮");
+
+}
+
+
+
+function chooseCard(card){
+
+
+if(card.innerHTML=="💣"){
+
+alert("💥 بمب خورد! موجودی از بین رفت");
+
+multiplier=1;
+
+document.getElementById("multi").innerHTML="1.00x";
+
+document.getElementById("profit").innerHTML="0T";
+
+
+}
+
+else{
+
+
+multiplier+=0.5;
+
+
+document.getElementById("multi").innerHTML=
+multiplier.toFixed(2)+"x";
+
+
+document.getElementById("profit").innerHTML=
+(multiplier*10)+"T";
+
+
+card.innerHTML="💎";
+
+
+}
+
+
+}
+
+
+
+function withdraw(){
+
+alert("سود برداشت شد 💰");
+
+}
+
+
+</script>
+
+
+
+</body>
+
+</html>

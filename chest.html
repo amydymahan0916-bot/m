@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>صندوقچه | محمد (تست)</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+🧰 بازی صندوقچه
+</h1>
+
+
+<a href="index.html">
+
+<button>
+🏠 خانه
+</button>
+
+</a>
+
+
+</header>
+
+
+
+
+
+<section class="game-page">
+
+
+<h1>
+🧰 انتخاب صندوقچه
+</h1>
+
+
+
+
+<div class="box">
+
+
+<input id="chestAmount" placeholder="مبلغ ورود">
+
+
+<br><br>
+
+
+<button onclick="startChestGame()">
+🚀 شروع بازی
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="chests">
+
+
+
+<button onclick="openChestGame(1)">
+🧰
+</button>
+
+
+
+<button onclick="openChestGame(2)">
+🧰
+</button>
+
+
+
+<button onclick="openChestGame(3)">
+🧰
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="box">
+
+
+<h2>
+ضریب:
+<span id="chestMulti">
+1.00x
+</span>
+
+</h2>
+
+
+
+<h3>
+
+سود:
+
+<span id="chestProfit">
+0T
+</span>
+
+</h3>
+
+
+
+</div>
+
+
+
+
+
+
+
+<button onclick="chestWithdraw()">
+
+💰 برداشت
+
+</button>
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<script src="script.js"></script>
+
+
+
+</body>
+
+</html>

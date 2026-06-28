@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>مین یاب | محمد (تست)</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+💣 مین یاب
+</h1>
+
+
+<a href="index.html">
+
+<button>
+🏠 خانه
+</button>
+
+</a>
+
+
+</header>
+
+
+
+
+<section class="game-page">
+
+
+<h1>
+💣 بازی مین یاب
+</h1>
+
+
+
+
+<div class="box">
+
+
+<p>
+تعداد بمب‌ها
+</p>
+
+
+<button onclick="createMines(3)">
+💣 3
+</button>
+
+
+<button onclick="createMines(5)">
+💣 5
+</button>
+
+
+<button onclick="createMines(10)">
+💣 10
+</button>
+
+
+<button onclick="createMines(15)">
+💣 15
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="mine-grid">
+
+
+<button onclick="selectMine(0)">❓</button>
+<button onclick="selectMine(1)">❓</button>
+<button onclick="selectMine(2)">❓</button>
+<button onclick="selectMine(3)">❓</button>
+<button onclick="selectMine(4)">❓</button>
+
+
+<button onclick="selectMine(5)">❓</button>
+<button onclick="selectMine(6)">❓</button>
+<button onclick="selectMine(7)">❓</button>
+<button onclick="selectMine(8)">❓</button>
+<button onclick="selectMine(9)">❓</button>
+
+
+<button onclick="selectMine(10)">❓</button>
+<button onclick="selectMine(11)">❓</button>
+<button onclick="selectMine(12)">❓</button>
+<button onclick="selectMine(13)">❓</button>
+<button onclick="selectMine(14)">❓</button>
+
+
+<button onclick="selectMine(15)">❓</button>
+<button onclick="selectMine(16)">❓</button>
+<button onclick="selectMine(17)">❓</button>
+<button onclick="selectMine(18)">❓</button>
+<button onclick="selectMine(19)">❓</button>
+
+
+<button onclick="selectMine(20)">❓</button>
+<button onclick="selectMine(21)">❓</button>
+<button onclick="selectMine(22)">❓</button>
+<button onclick="selectMine(23)">❓</button>
+<button onclick="selectMine(24)">❓</button>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h2>
+
+ضریب:
+
+<span id="mineMulti">
+1.00x
+</span>
+
+</h2>
+
+
+</div>
+
+
+
+
+<input id="mineAmount" placeholder="مبلغ ورود">
+
+
+<br><br>
+
+
+<button>
+🚀 شروع بازی
+</button>
+
+
+
+<button onclick="mineWithdraw()">
+💰 برداشت
+</button>
+
+
+
+
+</section>
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

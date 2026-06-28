@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>بازی سکه | محمد (تست)</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+❤️👍 بازی سکه
+</h1>
+
+
+<a href="index.html">
+
+<button>
+🏠 خانه
+</button>
+
+</a>
+
+
+</header>
+
+
+
+
+
+<section class="game-page">
+
+
+<h1>
+🪙 حدس سکه
+</h1>
+
+
+
+
+<div class="box">
+
+
+<h2>
+تعداد سکه
+</h2>
+
+
+
+<button onclick="setCoinCount(1)">
+🪙 1
+</button>
+
+
+<button onclick="setCoinCount(2)">
+🪙🪙 2
+</button>
+
+
+<button onclick="setCoinCount(3)">
+🪙🪙🪙 3
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="box">
+
+
+<h2>
+انتخاب نتیجه
+</h2>
+
+
+
+<button onclick="setCoinChoice('❤️')">
+❤️ قلب
+</button>
+
+
+
+<button onclick="setCoinChoice('👍')">
+👍 لایک
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="box">
+
+
+<input id="coinAmount" placeholder="مبلغ ورود">
+
+
+
+<br><br>
+
+
+<button onclick="playCoinGame()">
+🚀 شروع بازی
+</button>
+
+
+
+</div>
+
+
+
+
+
+
+<div class="result">
+
+
+<h2>
+نتیجه:
+</h2>
+
+
+<p id="coinResult">
+❓
+</p>
+
+
+</div>
+
+
+
+
+
+<button onclick="coinWithdraw()">
+💰 برداشت
+</button>
+
+
+
+
+
+</section>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
