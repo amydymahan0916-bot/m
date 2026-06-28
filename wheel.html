@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>گردونه شانس | محمد (تست)</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+<h1>
+🎰 محمد (تست)
+</h1>
+
+
+<div class="wallet">
+💰 100T | 🌐 0 | 🎫 2
+</div>
+
+
+<a href="index.html">
+
+<button>
+🏠 خانه
+</button>
+
+</a>
+
+
+</header>
+
+
+
+
+
+<section class="game-page">
+
+
+<h1>
+🎡 گردونه شانس
+</h1>
+
+
+
+<div class="box wheel-box">
+
+
+<div class="wheel">
+
+🎡
+
+</div>
+
+
+
+<h2>
+گردونه روزانه
+</h2>
+
+
+<p>
+هر روز یک بار شانس خود را امتحان کنید
+</p>
+
+
+
+<button onclick="spinWheel()">
+🎯 چرخاندن گردونه
+</button>
+
+
+
+<h3 id="result">
+نتیجه:
+</h3>
+
+
+
+</div>
+
+
+
+
+</section>
+
+
+
+
+
+<script>
+
+
+function spinWheel(){
+
+
+let prizes=[
+
+"🎫 تیکت دریافت کردی",
+
+"💰 جایزه کوچک",
+
+"⭐ امتیاز ویژه",
+
+"😢 این بار چیزی نبردی"
+
+];
+
+
+let random=Math.floor(Math.random()*prizes.length);
+
+
+document.getElementById("result").innerHTML=
+"نتیجه: "+prizes[random];
+
+
+}
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
