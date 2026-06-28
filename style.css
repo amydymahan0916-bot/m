@@ -1,508 +1,81 @@
-*{
-    box-sizing:border-box;
-    font-family:tahoma, Arial;
-}
+/* =========================
+   FIX HOME PAGE LAYOUT
+   ========================= */
 
-body{
-
-    margin:0;
-    background:
-    radial-gradient(circle at top,#4b1680,#08000f 60%);
-
-    color:white;
-    min-height:100vh;
-
-    padding-bottom:100px;
-
-}
-
-
-
-/* هدر */
-
+/* هدر مرتب‌تر */
 header{
-
     display:flex;
-    justify-content:space-around;
     align-items:center;
-
+    justify-content:space-between;
+    padding:15px 20px;
     flex-wrap:wrap;
+    gap:10px;
+}
 
-    gap:15px;
 
+/* باکس بازی‌ها (صفحه اصلی) */
+.games{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+    padding:20px;
+}
+
+
+/* کارت‌های بازی */
+.game{
+    background:linear-gradient(145deg,#1b092d,#0b0315);
+    border-radius:25px;
     padding:20px;
 
-    background:#10051d;
-
-    border-bottom:1px solid #a020ff;
-
-    box-shadow:
-    0 0 30px #8b00ff;
-
-}
-
-
-
-.brand{
-
-    text-align:center;
-
-}
-
-
-.brand h1{
-
-    color:#e4c1ff;
-
-    text-shadow:
-    0 0 15px #b000ff;
-
-}
-
-
-
-
-
-a{
-
-    text-decoration:none;
-
-    color:white;
-
-}
-
-
-
-
-
-.support,
-.wallet{
-
-    background:
-    linear-gradient(145deg,#1b092d,#0b0315);
-
-    padding:15px 20px;
-
-    border-radius:20px;
-
-    border:1px solid #9b00ff;
-
-    box-shadow:
-    0 0 20px #7a00ff;
-
-}
-
-
-
-
-
-.support span{
-
-    color:#00ffc8;
-
-}
-
-
-
-
-
-button{
-
-    border:none;
-
-    cursor:pointer;
-
-    color:white;
-
-    padding:12px 25px;
-
-    border-radius:15px;
-
-    font-size:15px;
-
-
-    background:
-    linear-gradient(45deg,#8b00ff,#00bfff);
-
-
-    box-shadow:
-    0 0 15px #8b00ff;
-
-}
-
-
-
-button:hover{
-
-    transform:scale(1.05);
-
-}
-
-
-
-
-.deposit{
-
-    background:
-    linear-gradient(45deg,#00c853,#00e5ff);
-
-}
-
-
-
-
-
-/* ورود */
-
-
-.login{
-
-    width:90%;
-
-    max-width:450px;
-
-    margin:40px auto;
-
-    text-align:center;
-
-
-    background:#140721;
-
-    padding:35px;
-
-    border-radius:30px;
-
-
-    border:1px solid #a020ff;
-
-
-    box-shadow:
-
-    0 0 35px #8000ff;
-
-}
-
-
-
-.avatar{
-
-    font-size:65px;
-
-}
-
-
-
-
-input{
-
-    width:90%;
-
-    padding:15px;
-
-    margin:20px 0;
-
-
-    background:#050008;
-
-
-    border:1px solid #8b00ff;
-
-
-    border-radius:15px;
-
-
-    color:white;
-
-
-    text-align:center;
-
-}
-
-
-
-
-
-/* بازی ها */
-
-
-.hero{
-
-    text-align:center;
-
-    margin:30px;
-
-}
-
-
-
-
-.games{
-
-
-    display:grid;
-
-
-    grid-template-columns:
-    repeat(auto-fit,minmax(230px,1fr));
-
-
-    gap:25px;
-
-
-    padding:25px;
-
-}
-
-
-
-
-
-.game{
-
-
-    background:
-
-    linear-gradient(145deg,#1b092d,#0b0315);
-
-
-    padding:30px;
-
-
-    text-align:center;
-
-
-    border-radius:30px;
-
-
-    border:1px solid #8b00ff;
-
-
-    box-shadow:
-
-    0 0 25px #6500d9;
-
-
-    transition:.3s;
-
-}
-
-
-
-
-.game:hover{
-
-    transform:translateY(-8px);
-
-}
-
-
-
-
-.icon{
-
-    font-size:60px;
-
-}
-
-
-
-
-
-.game h2{
-
-    color:#e6c7ff;
-
-}
-
-
-
-
-
-/* صفحات بازی */
-
-
-
-
-.game-page{
-
-
-    width:90%;
-
-    max-width:700px;
-
-
-    margin:40px auto;
-
-
-    text-align:center;
-
-
-}
-
-
-
-
-
-.box{
-
-
-    background:#140721;
-
-
-    padding:25px;
-
-
-    margin:20px;
-
-
-    border-radius:25px;
-
-
-    border:1px solid #8b00ff;
-
-
-    box-shadow:0 0 25px #6500d9;
-
-
-}
-
-
-
-
-
-.cards,
-.mine-grid,
-.chests{
-
-
-    display:grid;
-
-    gap:15px;
-
+    display:flex;
+    flex-direction:column;
+    align-items:center;
     justify-content:center;
 
+    min-height:220px;
+    text-align:center;
 }
 
 
-
-
-
-.cards{
-
-    grid-template-columns:repeat(2,100px);
-
+/* دکمه داخل بازی‌ها */
+.game button{
+    margin-top:15px;
+    width:85%;
 }
-
-
-
-.cards button{
-
-    height:100px;
-
-    font-size:35px;
-
-}
-
-
-
-
-
-.mine-grid{
-
-    grid-template-columns:repeat(5,60px);
-
-}
-
-
-
-.mine-grid button{
-
-    height:60px;
-
-    font-size:25px;
-
-}
-
-
-
-
-
-.chests{
-
-    grid-template-columns:repeat(3,100px);
-
-}
-
-
-.chest{
-
-    height:100px;
-
-    font-size:45px;
-
-}
-
-
 
 
 /* منوی پایین */
-
-
 nav{
-
-
-    position:fixed;
-
-
-    bottom:15px;
-
-
-    left:50%;
-
-
-    transform:translateX(-50%);
-
-
-    width:90%;
-
-
-    max-width:600px;
-
-
     display:flex;
-
-
     justify-content:space-around;
-
-
-    background:#12051e;
-
-
-    padding:10px;
-
-
-    border-radius:30px;
-
-
-    border:1px solid #9000ff;
-
-
-    box-shadow:0 0 30px #8000ff;
-
-
+    align-items:center;
 }
 
 
+/* لینک‌های منو */
+nav a{
+    flex:1;
+    text-align:center;
+}
 
 
+/* دکمه‌های منو */
 nav button{
+    width:100%;
+}
 
-    background:none;
 
-    box-shadow:none;
+/* موبایل */
+@media (max-width:600px){
 
-    padding:5px;
+    .games{
+        grid-template-columns:1fr;
+    }
 
-    font-size:13px;
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
 
 }
